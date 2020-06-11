@@ -1,0 +1,221 @@
+    * {
+        box-sizing: border-box;
+        border-radius: 10px 10px;
+        margin: 5px 0;
+    }
+    
+    @font-face {
+        font-family: Raleway-Regular;
+        src: url(../font/Raleway-Regular.ttf);
+    }
+    
+    @font-face {
+        font-family: IndieFlower-Regular;
+        src: url(../font/IndieFlower-Regular.ttf);
+    }
+    
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        font-family: Raleway-Regular;
+        font-size: 15px;
+    }
+    
+    header {
+        background: rgb(238, 174, 218);
+        background: radial-gradient(circle, rgba(238, 174, 218, 1) 0%, rgb(153, 31, 127) 100%);
+        padding: 5px;
+        text-align: center;
+        font-family: Raleway-Regular;
+    }
+    
+    nav {
+        background-color: blue;
+        color: black;
+        float: left;
+        font-size: 12px;
+    }
+    
+    nav ul {
+        padding-left: 10px;
+        padding-right: 10px;
+        list-style-type: none;
+    }
+    
+    nav li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #33b5e5;
+        color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        display: inline-block;
+    }
+    
+    nav li:hover {
+        background-color: #3c6572;
+    }
+    
+    section {
+        margin-left: 100px;
+        margin-right: 100px;
+        clear: both;
+        font-family: IndieFlower-Regular;
+        text-align: center;
+    }
+    
+    section h2 {
+        font-size: 30px;
+    }
+    
+    section h3 {
+        font-size: 20px;
+    }
+    
+    article {
+        background-color: lightpink;
+        color: black;
+        float: left;
+        width: 300px;
+        text-align: left;
+        font-size: 12px;
+        font-family: IndieFlower-Regular;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    footer {
+        background: rgb(238, 174, 218);
+        background: radial-gradient(circle, rgba(238, 174, 218, 1) 0%, rgb(153, 31, 127) 100%);
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+        clear: both;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(44, 17, 75);
+    }
+    
+    .link {
+        float: right;
+        padding-right: 5em;
+        padding-bottom: 5em;
+        padding-top: 0em;
+    }
+    
+    th {
+        vertical-align: text-top;
+    }
+    
+    .formulario {
+        background-color: lightpink;
+        color: black;
+        width: 300px;
+        float: center;
+        text-align: left;
+        font-size: 12px;
+        padding: 10px;
+        margin-left: 300px;
+    }
+    
+    .form-title {
+        text-align: center;
+        font-family: Raleway-Regular;
+    }
+    
+    .form-label {
+        text-align: left;
+        font-family: Raleway-Regular;
+        width: 80px;
+        height: 20px;
+    }
+    
+    .form-input {
+        text-align: left;
+        font-family: Raleway-Regular;
+        width: 200px;
+        height: 20px;
+        border-radius: 5px;
+        float: right;
+    }
+    
+    .form-pers {
+        text-align: left;
+        font-family: Raleway-Regular;
+        width: 60px;
+        height: 20px;
+        border-radius: 5px;
+        float: right;
+    }
+    
+    .form-textarea {
+        text-align: left;
+        font-family: Raleway-Regular;
+        width: 200px;
+        height: 60px;
+        border-radius: 5px;
+        float: right;
+    }
+    
+    .btn-submit {
+        font-family: Raleway-Regular;
+        width: 150px;
+        height: 20px;
+    }
+    /*ESCRITORIO*/
+    
+    @media only screen and (max-width:1366px) {
+        /*Como es leido el css de arriba a abajo toma para este caso los valores por defecto*/
+    }
+    /*TABLET*/
+    
+    @media only screen and (max-width:936px) {
+        img {
+            max-width: 150px;
+            height: auto;
+        }
+        section {
+            margin-left: 10px;
+            margin-right: 0px;
+        }
+        article {
+            float: left;
+            width: 170px;
+            margin-left: 5px;
+            margin-right: 0;
+        }
+        .formulario {
+            float: none;
+            margin-left: 100px;
+            margin-right: 0;
+        }
+    }
+    /*CELULAR*/
+    
+    @media only screen and (max-width: 600px) {
+        header {
+            text-align: left;
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+        section {
+            margin-left: 10px;
+            margin-right: 0px;
+        }
+        article {
+            float: left;
+            width: 120px;
+            margin-left: 5px;
+            margin-right: 0;
+        }
+        .formulario {
+            float: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
